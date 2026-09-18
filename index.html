@@ -1,12 +1,16 @@
-html_content = """<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ca">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Model CIC — Cosmodinàmica Informacional Cíclica</title>
-    <!-- MathJax for rendering LaTeX equations smoothly -->
+    <!-- MathJax per renderitzar les equacions LaTeX -->
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <!-- Comptador de visites de GoatCounter (S'activarà automàticament quan tinguis el teu compte) -->
+    <script data-goatcounter="https://model-cic.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+
     <style>
         :root {
             --primary: #0a192f;
@@ -55,13 +59,6 @@ html_content = """<!DOCTYPE html>
             max-width: 800px;
             margin: 0 auto 20px auto;
             font-weight: 300;
-        }
-
-        header .author {
-            font-size: 1rem;
-            color: var(--text-muted);
-            text-transform: uppercase;
-            letter-spacing: 1.5px;
         }
 
         .container {
@@ -213,7 +210,6 @@ html_content = """<!DOCTYPE html>
     <header>
         <h1>Model de Cosmodinàmica Informacional Cíclica (CIC)</h1>
         <p class="subtitle">Manifest Teòric, Desglossament Matemàtic Integral i Validació Empírica Paral·lela</p>
-        <div class="author">Autor: Abel Real Colell</div>
     </header>
 
     <div class="container">
@@ -363,14 +359,8 @@ html_content = """<!DOCTYPE html>
 
     <footer>
         <p>Model de Cosmodinàmica Informacional Cíclica (CIC) — Publicació Web Oficial</p>
-        <p>Desenvolupat per Abel Real Colell | Allà on la matemàtica rigorosa i la intuïció còsmica es troben.</p>
+        <p>Allà on la matemàtica rigorosa i la intuïció còsmica es troben.</p>
     </footer>
 
 </body>
 </html>
-"""
-
-with open("index.html", "w", encoding="utf-8") as f:
-    f.write(html_content)
-
-print("index.html created successfully!")
